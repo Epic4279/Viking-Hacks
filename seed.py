@@ -3,7 +3,7 @@ class Seed():
     # All others measured in meters
     # Cost per acre to plant
     # Sale value is $ per bushel
-    def __init__(self, seed_name, amount_of_seeds_produced, pods_per_square, grains_per_pod, weight, cost, sale_value): 
+    def __init__(self, seed_name, amount_of_seeds_produced, pods_per_square, grains_per_pod, weight, cost, sale_value,bushel_produced): 
         self.seed_name = seed_name
         self.pods_per_square = pods_per_square
         self.grains_per_pod = grains_per_pod
@@ -11,11 +11,8 @@ class Seed():
         self.cost = cost
         self.sale_value = sale_value
         self.amount_of_seeds_produced=amount_of_seeds_produced
+        #self.bushels_produced_per_acre=((float(self.pods_per_square) * float(self.grains_per_pod) * float(self.weight)) / float(10000)) * 36.7437
+        self.bushels_produced_per_acre=bushel_produced
+        self.profit=(self.bushels_produced_per_acre*self.sale_value)
     
-    def max_yeild(self):
-        # returns bushels per 100 acres
-        return ((self.pods_per_square * self.grains_per_pod * self.weight) / 10,000) * 36.7437
-    
-    #def net_max_profit(self, bushels_yeilded):
-        #profit = bushels_yeilded * self.sale_value
-        #loss = self.max_yeild() * 
+   
