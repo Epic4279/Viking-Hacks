@@ -1,6 +1,6 @@
-class Climate_data:
+class Climate_data_spring:
     def __init__(self):
-            self.city_data_dict = {
+            self.spring_data_dict = {
                 "Fremont": {
                     "Average Spring Temperature (Fahrenheit)": 70.5,
                     "Average Spring Rainfall (inches)": 3.8,
@@ -20,6 +20,78 @@ class Climate_data:
                 "Oakland": {
                     "Average Spring Temperature (Fahrenheit)": 69.6,
                     "Average Spring Rainfall (inches)": 5.9,
+                },
+            }
+class Climate_data_summer:
+    def __init__(self):
+            self.summer_data_dict = {
+                "Fremont": {
+                    "Average Summer Temperature (Fahrenheit)": 75.0,
+                    "Average Summer Rainfall (inches)": 2.8,
+                },
+                "San Jose": {
+                    "Average Summer Temperature (Fahrenheit)": 78.2,
+                    "Average Summer Rainfall (inches)": 2.5,
+                },
+                "Los Altos": {
+                    "Average Summer Temperature (Fahrenheit)": 76.9,
+                    "Average Summer Rainfall (inches)": 3.7,
+                },
+                "Palo Alto": {
+                    "Average Summer Temperature (Fahrenheit)": 79.8,
+                    "Average Summer Rainfall (inches)": 1.5,
+                },
+                "Oakland": {
+                    "Average Summer Temperature (Fahrenheit)": 74.6,
+                    "Average Summer Rainfall (inches)": 4.9,
+                },
+            }
+class Climate_data_fall:
+    def __init__(self):
+            self.fall_data_dict = {
+                "Fremont": {
+                    "Average Autumn Temperature (Fahrenheit)": 65.0,
+                    "Average Autumn Rainfall (inches)": 3.2,
+                },
+                "San Jose": {
+                    "Average Autumn Temperature (Fahrenheit)": 68.2,
+                    "Average Autumn Rainfall (inches)": 2.9,
+                },
+                "Los Altos": {
+                    "Average Autumn Temperature (Fahrenheit)": 66.9,
+                    "Average Autumn Rainfall (inches)": 4.1,
+                },
+                "Palo Alto": {
+                    "Average Autumn Temperature (Fahrenheit)": 69.8,
+                    "Average Autumn Rainfall (inches)": 2.0,
+                },
+                "Oakland": {
+                    "Average Autumn Temperature (Fahrenheit)": 64.6,
+                    "Average Autumn Rainfall (inches)": 5.4,
+                },
+            }
+class Climate_data_winter:
+    def __init__(self):
+            self.winter_data_dict = {
+                "Fremont": {
+                    "Average Winter Temperature (Fahrenheit)": 55.0,
+                    "Average Winter Rainfall (inches)": 4.8,
+                },
+                "San Jose": {
+                    "Average Winter Temperature (Fahrenheit)": 58.2,
+                    "Average Winter Rainfall (inches)": 4.5,
+                },
+                "Los Altos": {
+                    "Average Winter Temperature (Fahrenheit)": 56.9,
+                    "Average Winter Rainfall (inches)": 5.7,
+                },
+                "Palo Alto": {
+                    "Average Winter Temperature (Fahrenheit)": 59.8,
+                    "Average Winter Rainfall (inches)": 3.5,
+                },
+                "Oakland": {
+                    "Average Winter Temperature (Fahrenheit)": 54.6,
+                    "Average Winter Rainfall (inches)": 7.0,
                 },
             }
 class Crop_Climate_Data:
@@ -81,6 +153,6 @@ class Crop_Climate_Data:
                 "Cocoa Beans": {"Necessary Rainfall (inches)": 9.0, "Necessary Average Temperature (Fahrenheit)": 78.0},
                 "Coffee Beans": {"Necessary Rainfall (inches)": 10.0, "Necessary Average Temperature (Fahrenheit)": 80.0},
                 "Flax": {"Necessary Rainfall (inches)": 8.5, "Necessary Average Temperature (Fahrenheit)": 75.0},
-                "Hemp": {"Necessary Rainfagll (inches)": 9.0, "Necessary Average Temperature (Fahrenheit)": 78.0},
+                "Hemp": {"Necessary Rainfall (inches)": 9.0, "Necessary Average Temperature (Fahrenheit)": 78.0},
                 "Chia": {"Necessary Rainfall (inches)": 10.0, "Necessary Average Temperature (Fahrenheit)": 80.0},
             }
