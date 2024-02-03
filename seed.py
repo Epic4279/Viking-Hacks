@@ -1,4 +1,4 @@
-class seed():
+class Seed():
     # Weight is per 100 grains measured in grams
     # All others measured in meters
     # Cost per acre to plant
