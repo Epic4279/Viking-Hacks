@@ -1,4 +1,5 @@
 from data import Data
+
 data=Data()
 seed_data=data.grape_seeds_data
 working = []
