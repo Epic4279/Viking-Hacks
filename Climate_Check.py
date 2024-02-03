@@ -42,7 +42,7 @@ def climate_returns(season,city):
             if abs(crop_temp - temp) < 10:
                 flag = True
             if flag == True:
-                if abs(crop_rain - rainfall) < 3:
+                if abs(crop_rain - rainfall) < 5:
                     working.append(i)
             cntr += 1
         
@@ -61,7 +61,7 @@ def climate_returns(season,city):
             if abs(crop_temp - temp) < 10:
                 flag = True
             if flag == True:
-                if abs(crop_rain - rainfall) < 3:
+                if abs(crop_rain - rainfall) < 5:
                     working.append(i)
             cntr += 1
 
@@ -99,10 +99,10 @@ def climate_returns(season,city):
             if abs(crop_temp - temp) < 10:
                 flag = True
             if flag == True:
-                if abs(crop_rain - rainfall) < 3:
+                if abs(crop_rain - rainfall) < 5:
                     working.append(i)
             cntr += 1
             
     return working
 #python Climate_Check.py
-print(climate_returns("Fall","Fremont"))
+print(climate_returns("Spring","San Jose"))
