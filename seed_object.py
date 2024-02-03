@@ -9,7 +9,6 @@ largest_to_smallest=[]
 for x in new_data:
     seed=Seed(x,new_data[x][1],new_data[x][2],new_data[x][3],new_data[x][4],new_data[x][0],two_data[x],three_data[x])
     seed_object_list.append(seed)
-    largest_to_smallest.append(seed.profit)
     print("Seed name : ",seed.seed_name)
     #print("pod_per_square : ",seed.pods_per_square)
     #print("grains_per_pod :",seed.grains_per_pod)
@@ -19,6 +18,7 @@ for x in new_data:
     #print("amout_of_seeds_produced",seed.amount_of_seeds_produced)
     #print("Bushels_per_100_acres_produced", seed.bushels_produced_per_acre)
     print("Profit  :", seed.profit)
+
 #print(seed_object_list)
 
 
