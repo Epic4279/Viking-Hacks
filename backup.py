@@ -27,7 +27,7 @@ def submit_button_clicked():
     label2.place(relx=0.5,rely=0.2,anchor="center")
     count=1
     for item in final_list:
-        text_box.insert(tk.END, str(count)+". "+str(item.seed_name)+": $"+str(round(item.profit,3)) + '\n')
+        text_box.insert(tk.END, str(count)+". "+str(item.seed_name)+": $"+str(round(item.profit,3)) +" income per acre" '\n')
         count=count+1
 
 label=tk.Label(root, text="Enter how much you are willing to pay per acre (in dollars)")
@@ -39,9 +39,6 @@ entry2.place(relx=0.5,rely=0.7,anchor="center")
 submit_button = tk.Button(root, text="Submit", command=submit_button_clicked)
 submit_button.place(relx=0.5,rely=0.9,anchor="center")
 
-# Create a label to display the result
-result_label = tk.Label(root, text="")
-result_label.pack(pady=10)
 
 # Start the Tkinter event loop
 root.mainloop()
