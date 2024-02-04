@@ -19,6 +19,9 @@ for x in amount_crops_eligble:
             final_crops.append(y)
 
 print(len(final_crops))
+sorted_objects = sorted(final_crops, key=lambda x: x.profit, reverse=True)
+for x in sorted_objects:
+    print(str(x.seed_name)+": $"+str(round(x.profit,3)))
             
 
 
