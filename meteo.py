@@ -2,14 +2,14 @@ from geopy.geocoders import Nominatim
 import requests
 import json
 class Weather:
-    def __init__(self, address):
+    def __init__(self, address_1):
         loc = Nominatim(user_agent="Geopy Library")
 
         # entering the location name
-        getLoc = loc.geocode(address)
+        getLoc = loc.geocode(address_1)
 
         # printing address
-        print(getLoc.address)
+        #print(getLoc.address)
         self.latitude =getLoc.latitude
         self.longitude=getLoc.longitude
 
@@ -39,7 +39,7 @@ class Weather:
         #print(value)
 
         return average_temperature
-        
+
     def percipatation(self):
 
         url= "https://api.meteomatics.com/2024-02-03T13:00:00Z--2024-12-30T13:00:00Z:P1D/precip_24h:mm/"+str(self.latitude)+","+str(self.longitude)+"/json"
