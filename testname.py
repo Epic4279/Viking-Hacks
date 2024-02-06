@@ -1,7 +1,8 @@
 from data2 import Data_v2
 
-data=Data_v2()
-x=data.seed_grains_database
+data2=Data_v2()
+x=data2.seed_grains_database
 for i in x:
-    print(i)
+    list = [data2.seed_grains_database[i][0], data2.seed_grains_database[i][1], data2.seed_grains_database[i][2]]
+    print(list)
 #python testname.py
